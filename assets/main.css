@@ -339,6 +339,9 @@ table {
       .post-content h4 {
         font-size: 18px; } }
 
+  .container p {
+    color: #2a7ae2; }
+
 /**
  * Syntax highlighting styles
  */
