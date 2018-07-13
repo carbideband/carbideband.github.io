@@ -133,6 +133,10 @@ pre {
       padding-right: 15px;
       padding-left: 15px; } }
 
+.container {
+  padding-top: 64px;
+  padding-bottom: 91px; }
+
 /**
  * Clearfix
  */
@@ -181,7 +185,11 @@ table {
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative;
-  background-color: #75b1f2; }
+  background-color: #75b1f2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
 
 .site-title {
   font-size: 26px;
@@ -249,7 +257,11 @@ table {
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 15px 0;
-  background-color: #75b1f2; }
+  background-color: #75b1f2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
 
 .contact-list {
   list-style: none;
