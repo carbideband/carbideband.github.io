@@ -3,16 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="theme-color" content="#424242">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#000000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Carbide The Band</title>
         <link rel="stylesheet" href="assets/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/fullpage.css" />
     </head>
 
-<body><header class="site-header" role="banner">
+<body>
+  <header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="https://carbide.rocks"><img src="img/carbide-name_2c.png" alt="Home" border="0"></a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="img/carbide-name_2c.png" alt="Home" border="0"></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -22,15 +24,15 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="#feed/about">About</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
-    max-width: 600px;
+    margin: 0 auto;
+    max-width: 800px;
     text-align: center;
   }
   h1 {
@@ -42,7 +44,42 @@
 </style>
 
 <div class="container">
-<iframe style="border: 0; width: 320px; height: 320px;" src="https://bandcamp.com/EmbeddedPlayer/album=1814967126/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="http://carbide.bandcamp.com/album/house-of-snakes">House of Snakes by Carbide</a></iframe>
+
+  <div id="fullpage">
+	<div class="section" id="section0">
+	    <div class="slide" id="slide1" data-anchor="fb">
+
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcarbideband&tabs=timeline%2C%20events%2C%20%20messages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none; height: 100%; margin: 0 auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+            </div>
+
+	    <div class="slide" id="slide2" data-anchor="about">
+              <div class="text-wrapper">
+                <img class="about-img" src="img/about.png" title="Credit: @GtsPresents" border="0">
+                <p><strong>About</strong></p>
+                <p>Alternative/Punk act, Carbide, is a group from Houston formed in March of 2017 by Rogelio Silva, Luis Cruz, and Saul Umanzor. Since then, Carbide has become far more than just the 3 original musicians; collaborating with individuals of many talents to produce the highest of quality content possible (artists, sound engineers, photographers, etc.), all while retaining, and allowing others to retain, their original authorship. Beyond music, Carbide's ambition is to create a local environment where artists can make a healthy living without being taken advantage of.</p>
+                <p>Website powered by <a href="https://github.com">Github</a> and <a href="https://alvarotrigo.com/fullPage/">fullPage.js</a></p>
+                <p><strong>Contact</strong></p>
+                <p>Business: <a class="u-email" href="mailto:booking@carbide.rocks">booking@carbide.rocks</a><br />
+                Web inquiries: <a class="u-email" href="mailto:filthy@carbide.rocks">filthy@carbide.rocks</a></p>
+              </div>
+	    </div>
+	</div>
+  </div>
+</div>
+
+<script type="text/javascript" src="assets/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['feed'],
+        slidesNavigation: true,
+        paddingTop: 64,
+        paddingBottom: 64,
+        autoScrolling: false,
+        fitToSection: false
+    });
+</script>
 </div>
 
       </div>
@@ -51,18 +88,14 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Business:</li><li><a class="u-email" href="mailto:booking@carbide.rocks">booking@carbide.rocks</a></li>
-        </ul>
-      </div>
+      <iframe class="bc-player" src="https://bandcamp.com/EmbeddedPlayer/album=1814967126/size=small/bgcol=333333/linkcol=4ec5ec/artwork=none/transparent=true/" seamless><a href="http://carbide.bandcamp.com/album/house-of-snakes">House of Snakes by Carbide</a></iframe>
 
-      <div class="footer-col footer-col-2">
-          <a href="https://instagram.com/carbide_band"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#instagram"></use></svg></a>
-          <a href="https://facebook.com/carbideband"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#facebook"></use></svg></a>
-          <a href="https://youtube.com/channel/UCqQJBHyLgElK4gSFF2d5d-g"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#youtube"></use></svg></a>
-          <a href="https://github.com/carbideband"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#github"></use></svg></a>
-      </div>
+       <div class="footer-col footer-col-2">
+           <a href="https://instagram.com/carbide_band"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#instagram"></use></svg></a>
+           <a href="https://facebook.com/carbideband"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#facebook"></use></svg></a>
+           <a href="https://youtube.com/channel/UCqQJBHyLgElK4gSFF2d5d-g"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#youtube"></use></svg></a>
+           <a href="https://github.com/carbideband"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#github"></use></svg></a>
+       </div>
 
     </div>
 
