@@ -134,20 +134,17 @@ pre {
       padding-left: 15px; } }
 
 .container {
-  padding-top: 64px;
-  padding-bottom: 100px; }
+  padding-top: 55px;
+  padding-bottom: 30px; }
 
 .text-wrapper {
   margin: 0 auto;
   height: 100%;
   max-width: 600px; }
 
-.text-wrapper1 {
-  max-width: 600px; }
-
-
 .about-img {
-  border-radius: 8px; }
+  border-radius: 8px;
+  overflow: hidden; }
 
 .slide {
   overflow: hidden; }
