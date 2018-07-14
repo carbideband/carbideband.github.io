@@ -135,7 +135,15 @@ pre {
 
 .container {
   padding-top: 64px;
-  padding-bottom: 64px; }
+  padding-bottom: 100px; }
+
+.text-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 600px; }
+
+.about-img {
+  border-radius: 8px; }
 
 /**
  * Clearfix
@@ -181,7 +189,7 @@ table {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
+  border-top: 5px solid #000;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative;
@@ -209,7 +217,7 @@ table {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #fff;
+    color: #000;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -271,12 +279,19 @@ table {
   font-size: 15px;
   margin: 0 auto;
   width: -webkit-calc(100% - (100px));
-  width: calc(100% - (100px)); }
+  width: calc(100% - (100px));
+  text-align: center; }
 
 .bc-player {
   border: 0;
   width: 100%;
   height: 42px; }
+
+.footer-col-2 {
+  width: -webkit-calc(33%));
+  width: calc(33%));
+  margin: 0 auto;
+  white-space: nowrap; }
 
 /**
  * Page content
