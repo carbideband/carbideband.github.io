@@ -188,7 +188,8 @@ table {
   background-color: #75b1f2;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 101; }
 
 .site-title {
   font-size: 26px;
@@ -259,7 +260,8 @@ table {
   background-color: #75b1f2;
   position: fixed;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 101; }
 
 .contact-list {
   list-style: none;
