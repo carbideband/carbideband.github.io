@@ -144,7 +144,7 @@ pre {
 
 .about-img {
   border-radius: 8px;
-  overflow: hidden; }
+  width: 95%; }
 
 .slide {
   overflow: hidden; }
