@@ -24,7 +24,11 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="#feed/about">About</a></div>
+        <div class="trigger">
+          <a class="page-link" href="#feed/about">About</a>
+          <a class="page-link" href="#feed/contact">Contact</a>
+          <a class="page-link" href="#feed/fb">News</a>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -47,22 +51,34 @@
 
   <div id="fullpage">
 	<div class="section" id="section0">
-	    <div class="slide" id="slide1" data-anchor="fb">
+	    <div class="slide" id="slide1" data-anchor="about">
 
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcarbideband&tabs=timeline%2C%20events%2C%20%20messages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none; height: 100%; margin: 0 auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              <div class="text-wrapper">
 
+                <p><strong>About</strong></p>
+                <img class="about-img" src="img/about.png" title="Credit: @GtsPresents" border="0">
+                <p><br/>Alternative/Punk act, Carbide, is a group from Houston formed in March of 2017 by Rogelio Silva, Luis Cruz, and Saul Umanzor. Since then, Carbide has become far more than just the 3 original musicians; collaborating with individuals of many talents to produce the highest of quality content possible (artists, sound engineers, photographers, etc.), all while retaining, and allowing others to retain, their original authorship. Beyond music, Carbide's ambition is to create a local environment where artists can make a healthy living without being taken advantage of.</p>
+                <p>Website powered by <a href="https://github.com">Github</a> and <a href="https://alvarotrigo.com/fullPage/">fullPage.js</a></p>
+              </div>
             </div>
 
-	    <div class="slide" id="slide2" data-anchor="about">
-              <div class="text-wrapper">
-                <img class="about-img" src="img/about.png" title="Credit: @GtsPresents" border="0">
-                <p><strong>About</strong></p>
-                <p>Alternative/Punk act, Carbide, is a group from Houston formed in March of 2017 by Rogelio Silva, Luis Cruz, and Saul Umanzor. Since then, Carbide has become far more than just the 3 original musicians; collaborating with individuals of many talents to produce the highest of quality content possible (artists, sound engineers, photographers, etc.), all while retaining, and allowing others to retain, their original authorship. Beyond music, Carbide's ambition is to create a local environment where artists can make a healthy living without being taken advantage of.</p>
-                <p>Website powered by <a href="https://github.com">Github</a> and <a href="https://alvarotrigo.com/fullPage/">fullPage.js</a></p>
-                <p><strong>Contact</strong></p>
-                <p>Business: <a class="u-email" href="mailto:booking@carbide.rocks">booking@carbide.rocks</a><br />
-                Web inquiries: <a class="u-email" href="mailto:filthy@carbide.rocks">filthy@carbide.rocks</a></p>
+	    <div class="slide" id="slide2" data-anchor="contact">
+
+              <div class="text-wrapper1">
+
+                  <p><strong>Contact</strong></p>
+                 <p>Business: <a class="u-email" href="mailto:booking@carbide.rocks"
+>booking@carbide.rocks</a><br />
+                 Web inquiries: <a class="u-email" href="mailto:filthy@carbide.rocks
+">filthy@carbide.rocks</a></p>
+
               </div>
+            </div>
+
+	    <div class="slide" id="slide2" data-anchor="fb">
+
+              <p><strong>News Feed</strong></p>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcarbideband&tabs=timeline%2C%20events%2C%20%20messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none; height: 100%; margin: 0 auto;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 	    </div>
 	</div>
   </div>
@@ -73,9 +89,7 @@
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         anchors: ['feed'],
-        slidesNavigation: true,
-        paddingTop: 64,
-        paddingBottom: 64,
+        controlArrows: false,
         autoScrolling: false,
         fitToSection: false
     });

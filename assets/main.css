@@ -142,8 +142,15 @@ pre {
   height: 100%;
   max-width: 600px; }
 
+.text-wrapper1 {
+  max-width: 600px; }
+
+
 .about-img {
   border-radius: 8px; }
+
+.slide {
+  overflow: hidden; }
 
 /**
  * Clearfix
