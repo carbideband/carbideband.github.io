@@ -165,6 +165,7 @@ pre {
   height: 20px;
   display: inline-block;
   fill: #000000;
+  padding-left: 8px;
   padding-right: 5px;
   padding-top: 5px;
   vertical-align: text-top; }
