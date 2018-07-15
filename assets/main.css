@@ -167,7 +167,6 @@ pre {
   fill: #000000;
   padding-left: 8px;
   padding-right: 5px;
-  padding-top: 5px;
   vertical-align: text-top; }
 
 /**
@@ -295,7 +294,7 @@ table {
   height: 42px; }
 
 .footer-col-2 {
-  width: 33%;
+  width: 50%;
   margin: 0 auto;
   white-space: nowrap; }
 
