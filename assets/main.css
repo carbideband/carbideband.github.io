@@ -232,6 +232,9 @@ table {
       right: 15px;
       border-radius: 5px;
       text-align: right; }
+    .nav-view {
+      width: 18px;
+      height: 15px; }
       .site-nav label[for="nav-trigger"] {
         display: block;
         float: right;
