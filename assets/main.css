@@ -132,6 +132,10 @@ pre {
       max-width: calc(800px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      padding-right: 5px;
+      padding-left: 5px; } }
 
 .container {
   padding-top: 55px;
