@@ -330,6 +330,13 @@ table {
   display: block;
   font-size: 24px; }
 
+.fb-feed {
+  overflow: hidden;
+  border: none;
+  height: 100%;
+  width: 340px;
+  margin: 0 auto; }
+
 /**
  * Posts
  */
