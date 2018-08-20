@@ -1,5 +1,5 @@
 /*!
- * fullPage 3.0.1
+ * fullPage 3.0.2
  * https://github.com/alvarotrigo/fullPage.js
  *
  * @license GPLv3 for open source use only
@@ -74,12 +74,12 @@ html.fp-enabled,
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #000;
+    border-color: transparent transparent transparent #fff;
 }
 .fp-scrollable {
     overflow: hidden;
@@ -169,7 +169,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #000;
+    background: #333;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
