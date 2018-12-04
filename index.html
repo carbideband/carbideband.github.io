@@ -93,9 +93,9 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <button class="expand-music" id="ebtn">Press to Show/Hide BandCamp Player</button>
+      <button class="expand-music" id="ebtn">&#x21D1; Show BandCamp Player &#x21D1;</button>
 
-      <iframe class="bc-player" src="https://bandcamp.com/EmbeddedPlayer/album=1814967126/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://carbide.bandcamp.com/album/house-of-snakes">House of Snakes by Carbide</a></iframe>
+      <iframe class="bc-player" data-src="https://bandcamp.com/EmbeddedPlayer/album=1814967126/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://carbide.bandcamp.com/album/house-of-snakes">House of Snakes by Carbide</a></iframe>
 
        <div class="footer-col footer-col-2">
            <a href="https://open.spotify.com/artist/46FMfS2QJiBsbD42BYviN0"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#spotify"></use></svg></a>
@@ -129,6 +129,9 @@
     $(document).ready(function() {
         $('#ebtn').on('click', function (event) {
             $('.bc-player').toggle('show');
+            var expand = document.getElementById("ebtn");
+            if (expand.textContent=="\u21D1 Show BandCamp Player \u21D1") expand.textContent = "\u21D3 Hide BandCamp Player \u21D3";
+            else expand.textContent = "\u21D1 Show BandCamp Player \u21D1";
         });
     });
 </script>
