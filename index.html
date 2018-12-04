@@ -93,7 +93,9 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <iframe class="bc-player" src="https://bandcamp.com/EmbeddedPlayer/album=1814967126/size=small/bgcol=333333/linkcol=4ec5ec/artwork=none/transparent=true/" seamless><a href="http://carbide.bandcamp.com/album/house-of-snakes">House of Snakes by Carbide</a></iframe>
+      <button class="expand-music" id="ebtn"> == Press to Show/Hide BandCamp Player == </button>
+
+      <iframe class="bc-player" src="https://bandcamp.com/EmbeddedPlayer/album=1814967126/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://carbide.bandcamp.com/album/house-of-snakes">House of Snakes by Carbide</a></iframe>
 
        <div class="footer-col footer-col-2">
            <a href="https://open.spotify.com/artist/46FMfS2QJiBsbD42BYviN0"><svg class="svg-icon"><use xlink:href="assets/minima-social-icons.svg#spotify"></use></svg></a>
@@ -110,6 +112,7 @@
 </footer>
 
 <script type="text/javascript" src="assets/fullpage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
@@ -121,6 +124,15 @@
 
     fullpage_api.setAllowScrolling(false, 'left, right');
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#ebtn').on('click', function (event) {
+            $('.bc-player').toggle('show');
+        });
+    });
+</script>
+
 </body>
 
 </html>
