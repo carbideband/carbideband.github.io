@@ -303,7 +303,7 @@ table {
   background-color: inherit;
   border: none;
   display: inline-block;
-  width: 100% }
+  width: 100%; }
 .expand-music:hover {
   color: #FFF;
   border: none; }
