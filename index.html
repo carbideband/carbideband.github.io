@@ -134,15 +134,11 @@
     });
 
     fullpage_api.setAllowScrolling(false, 'left, right');
-</script>
 
-<script type="text/javascript">
     $(document).ready(function() {
-        $('#ebtn').on('click', function (event) {
+        $('#ebtn').click(function() {
             $('.bc-player').toggle('show');
-            var expand = document.getElementById("ebtn");
-            if (expand.textContent=="\u21D1 Show BandCamp Player \u21D1") expand.textContent = "\u21D3 Hide BandCamp Player \u21D3";
-            else expand.textContent = "\u21D1 Show BandCamp Player \u21D1";
+            $(this).text($(this).text() == '\u21D1 Show BandCamp Player \u21D1' ? '\u21D3 Hide BandCamp Player \u21D3' : '\u21D1 Show BandCamp Player \u21D1');
         });
     });
 </script>

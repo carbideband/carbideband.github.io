@@ -279,7 +279,8 @@ table {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 15px 0;
+  padding-top: 12px;
+  padding-bottom: 15px;
   background-color: #75b1f2;
   position: fixed;
   bottom: 0;
@@ -298,16 +299,16 @@ table {
   text-align: center; }
 
 .expand-music {
+  padding: 5px 0;
   text-decoration: underline;
   color: #000;
-  padding-bottom: 14px;
   background-color: inherit;
   border: none;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
 .expand-music:hover {
-  color: #FFF;
-  border: none; }
+  color: #FFF; }
 
 .bc-player {
   display: none;
