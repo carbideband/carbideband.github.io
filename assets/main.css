@@ -208,6 +208,8 @@ table {
   z-index: 101; }
 
 .site-title {
+  height: 58px;
+  width: 122px;
   font-size: 26px;
   font-weight: 300;
   line-height: 54px;
