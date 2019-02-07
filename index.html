@@ -142,8 +142,13 @@
         anchors: ['about', 'feed'],
         controlArrows: false,
         autoScrolling: false,
-        fitToSection: false
+        fitToSection: false,
+        licenseKey: document.querySelector('#myKey').value;
     });
+
+    // Remove element, just in case
+    var item = document.querySelector('#myKey');
+    item.parentNode.removeChild(item);
 
     fullpage_api.setAllowScrolling(false, 'left, right');
 
