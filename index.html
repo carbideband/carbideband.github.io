@@ -137,8 +137,13 @@
 <script type="text/javascript" src="assets/fullpage.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<input id="myKey" value="null" />
+<input id="myKey" type="hidden" value="null" />
 <script type="text/javascript">
+
+    // Event to trigger GTM key tag
+    dataLayer = window.dataLayer || [];
+    dataLayer.push({event: "find_key"});
+
     $(document).ready(function() {
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['about', 'feed'],
