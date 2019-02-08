@@ -13,7 +13,19 @@ Fullpage.js allows the use of JavaScript to make Github's static pages a bit mor
 In our usecase, what we wanted was for users to be able to browse the webpage, without interrupting the music player.
 
 Reference the [README for FullPage.js](https://github.com/alvarotrigo/fullPage.js/blob/master/README.md) to modify and understand how slides are set up for your usecase.
-Once a [license](https://github.com/alvarotrigo/fullPage.js#license) is acquired, it is possible to use the current 'licenseKey' implementation using [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) by changing the 'GTM-xxxxxxx' string to your own and setting an html variable in 'Tags' based on the [link here](https://github.com/carbideband/carbideband.github.io/commit/52853ff42aba47ad8fb56e7e1663e46a376730f8). This way, you protect your license, while still remaining open source.
+
+Once a [license](https://github.com/alvarotrigo/fullPage.js#license) is acquired, it is possible to use the current 'licenseKey' implementation using [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) by changing the 'GTM-xxxxxxx' string to your own and creating a custom HTML tag in Tag Manager with the following:
+
+```javascript
+<script type="text/javascript">
+var key = document.querySelector('#myKey');
+key.value = "xyz"; //xyz is your licenseKey
+</script>
+```
+
+You must also create a **Custom Trigger** for the tag above with the event name *find_key* and configure it as the firing trigger for the tag that contains the code above.
+
+This way, you can protect your license, while still remaining open source.
 
 Sidenote about Jekyll: It is a great way to make an exceptional static blog with little to no programming background
 and their Minima theme is amazing.
