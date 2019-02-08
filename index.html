@@ -131,20 +131,20 @@
     </div>
 
   </div>
-
+  <input id="myKey" type="hidden" value="null" />
 </footer>
 
 <script type="text/javascript" src="assets/fullpage.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<input id="myKey" type="hidden" value="null" />
 <script type="text/javascript">
 
-    // Event to trigger GTM key tag
-    dataLayer = window.dataLayer || [];
-    dataLayer.push({event: "find_key"});
-
     $(document).ready(function() {
+
+        // Event to trigger GTM key tag
+        dataLayer = window.dataLayer || [];
+        dataLayer.push({event: "find_key"});
+
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['about', 'feed'],
             controlArrows: false,
@@ -153,16 +153,16 @@
             licenseKey: document.querySelector('#myKey').value
         });
 
-        // Remove element, just in case
-        var item = document.querySelector('#myKey');
-        item.parentNode.removeChild(item);
-
         fullpage_api.setAllowScrolling(false, 'left, right');
 
         $('#ebtn').click(function() {
             $('.bc-player').toggle('show');
             $(this).text($(this).text() == '\u21D1 Show BandCamp Player \u21D1' ? '\u21D3 Hide BandCamp Player \u21D3' : '\u21D1 Show BandCamp Player \u21D1');
         });
+
+        // Remove element, just in case
+        var item = document.querySelector('#myKey');
+        item.parentNode.removeChild(item);
     });
 </script>
 
