@@ -14,19 +14,6 @@ In our usecase, what we wanted was for users to be able to browse the webpage, w
 
 Reference the [README for FullPage.js](https://github.com/alvarotrigo/fullPage.js/blob/master/README.md) to modify and understand how slides are set up for your usecase.
 
-Once a [license](https://github.com/alvarotrigo/fullPage.js#license) is acquired, it is possible to use the current 'licenseKey' implementation using [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) by changing the 'GTM-xxxxxxx' string to your own and creating a custom HTML tag in Tag Manager with the following:
-
-```javascript
-<script type="text/javascript">
-var key = document.querySelector('#myKey');
-key.value = "xyz"; //xyz is your licenseKey
-</script>
-```
-
-You must also create a **Custom Trigger** for the tag above with the event name *find_key* and configure it as the firing trigger for the tag that contains the code above.
-
-This way, you can protect your license, while still remaining open source.
-
 Sidenote about Jekyll: It is a great way to make an exceptional static blog with little to no programming background
 and their Minima theme is amazing.
 It is great for just about any website (so long as you do some modifying).
