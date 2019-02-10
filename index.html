@@ -132,22 +132,24 @@
     </div>
 
   </div>
+  <input id="myKey" type="hidden" value="null" />
 </footer>
 
 <script type="text/javascript" src="assets/fullpage.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ingots.carbide.rocks/js/auth/verify-key.js"></script>
-<script type="text/javascript" src="https://ingots.carbide.rocks/js/auth/keys/keyring.js"></script>
+<script type="text/javascript" src="https://js.carbide.rocks/verify-key.js"></script>
+<script type="text/javascript" src="https://js.carbide.rocks/keys/keyring.js"></script>
 
 <script type="text/javascript">
 
     $(document).ready(function() {
+        fullpageKeyReg();
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['about', 'feed'],
             controlArrows: false,
             autoScrolling: false,
             fitToSection: false,
-            licenseKey: chooseKey('fullpage')
+            licenseKey: document.querySelector('#myKey').value
         });
 
         fullpage_api.setAllowScrolling(false, 'left, right');
@@ -156,6 +158,10 @@
             $('.bc-player').toggle('show');
             $(this).text($(this).text() == '\u21D1 Show BandCamp Player \u21D1' ? '\u21D3 Hide BandCamp Player \u21D3' : '\u21D1 Show BandCamp Player \u21D1');
         });
+
+        // Remove element, just in case
+        var item = document.querySelector('#myKey');
+        item.parentNode.removeChild(item);
     });
 </script>
 
