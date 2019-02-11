@@ -149,8 +149,10 @@
             controlArrows: false,
             autoScrolling: false,
             fitToSection: false,
-            licenseKey: document.querySelector('#myKey').value
+            licenseKey: localStorage["myKey"]
         });
+
+        localStorage.removeItem("myKey");
 
         fullpage_api.setAllowScrolling(false, 'left, right');
 
@@ -158,10 +160,6 @@
             $('.bc-player').toggle('show');
             $(this).text($(this).text() == '\u21D1 Show BandCamp Player \u21D1' ? '\u21D3 Hide BandCamp Player \u21D3' : '\u21D1 Show BandCamp Player \u21D1');
         });
-
-        // Remove element, just in case
-        var item = document.querySelector('#myKey');
-        item.parentNode.removeChild(item);
     });
 </script>
 
