@@ -130,7 +130,7 @@
        </div>
 
     </div>
-    <div id="importKey" />
+    <input id="fpKey" type="hidden" value="key" />
   </div>
 </footer>
 
@@ -138,23 +138,45 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-    $(function() {
-        $('#importKey').load('https://ingots.carbide.rocks/js/auth/keys/keyring.html', function() {
-            $(this).contents().unwrap();
-        });
-    });
+
     $(document).ready(function() {
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['about', 'feed'],
-            controlArrows: false,
-            autoScrolling: false,
-            fitToSection: false,
-            licenseKey: localStorage["myKey"]
+        var myKey = 'null';
+
+        function callback(response) {
+            document.querySelector("#fpKey").value = response;
+        }
+
+        function loadFp() {
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['about', 'feed'],
+                controlArrows: false,
+                autoScrolling: false,
+                fitToSection: false,
+                licenseKey: document.querySelector("#fpKey").value
+            });
+            fullpage_api.setAllowScrolling(false, 'left, right');
+        }
+
+        jQuery.ajax({
+            type: 'POST',
+            url: 'https://ingots.carbide.rocks/auth/keyring',
+            dataType: 'json',
+            data: {findkey: 'fullpage'},
+
+            success: function (obj,textstatus) {
+                if (!('error' in obj)) {
+                    callback(obj.result);
+                    loadFp();
+                    var item = document.querySelector("#fpKey");
+                    item.parentNode.removeChild(item);
+                } else {
+                    console.log(obj.error);
+                }
+            },
+            error: function(obj, textstatus) {
+                console.log(obj.error);
+            }
         });
-
-        localStorage.removeItem("myKey");
-
-        fullpage_api.setAllowScrolling(false, 'left, right');
 
         $('#ebtn').click(function() {
             $('.bc-player').toggle('show');
